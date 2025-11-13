@@ -1,14 +1,23 @@
-import csv
-import json
-
-rows = []
-with open("books.csv", newline="", encoding="utf-8") as f:
-   reader = csv.DictReader(f)
-   for r in reader:
-   r["id"] = int(r["id"])
-      r["pages"] = int(r["pages"])
-      r["rating"] = int(r["rating"])
-rows.append(r)
-with open("books.json", "w", encoding="utf-8") as f:
-    json.dump(rows, f, ensure_ascii=False, indent=2)
-    print("Export Complete!")
+[
+  {
+    "id": 1,
+    "title": "The Hobbit",
+    "author": "J.R.R.  Tolkien",
+    "pages": 310,
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "title": "Charlottes's Web",
+    "author": "E.B.  White",
+    "pages": 192,
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "title": "Wonder",
+    "author": "R.J. Palacio",
+    "pages": 320,
+    "rating": 5
+  }
+]
