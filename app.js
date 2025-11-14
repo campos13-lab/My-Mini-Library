@@ -25,4 +25,3 @@ data.forEach(book => {
 (${book.pages} pages) ★$ {book.rating}`;
    listE1.appendChild(li);
    });
-  
