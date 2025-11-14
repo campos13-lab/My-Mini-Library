@@ -6,8 +6,8 @@ const listE1 = document.getElementById("book-list")
 
 fetch("books.json")
      .then(response => {
-        if(!reponse. ok) {
-           throw new Error(`HTTP $ {response.status}`);
+        if(!response.ok) {
+           throw new Error(`HTTP ${response.status}`);
            }
   return response.json();
 })
