@@ -14,7 +14,7 @@ fetch("books.json")
    .then(data => {
 console.log("Parsed JSON type:",Array.isArray(data) ?
              "array" : typeof data);
- console.log("First item sample:", data[0]
+ console.log("First item sample:", data[0]);
             
             summaryE1.textContent = `You have ${data.length} book(s) in your library.`;
               data.sort((a, b) => b.rating - a.rating);
