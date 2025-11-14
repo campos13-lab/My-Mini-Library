@@ -11,7 +11,7 @@ fetch("books.json")
            }
   return response.json();
 })
-   .then(data) =>
+   .then(data =>
 console.log("Parsed JSON type:",Array.isArray(data) ?
              "array" : typeof data);
  console.log("First item sample:", data[0]
