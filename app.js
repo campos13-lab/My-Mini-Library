@@ -6,7 +6,7 @@ const listE1 = document.getElementById("book-list")
 
 fetch("books.json")
      .then(response => {
-        if(!reponse.ok) {
+        if(!reponse. ok) {
            throw new Error(`HTTP $ {response.status}`);
            }
   return response.json();
@@ -18,7 +18,7 @@ console.log("Parsed JSON type:",Array.isArray(data) ?
             
             summaryE1.textContent = `You have ${data.length} book(s) in your library.`;
               data.sort((a, b) => b.rating - a.rating);
-listE1.innerHTML =."";
+listE1.innerHTML = "";
 data.forEach(book => {
    const li = document.createElement("li");
    li.textContent = `${book.title} (${book.author}
